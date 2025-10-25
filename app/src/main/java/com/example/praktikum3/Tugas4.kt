@@ -39,3 +39,97 @@ fun Tugas4(modifier: Modifier = Modifier) {
             .background(Color.Gray)
             .padding(top = 15.dp),
         horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        val gambar = painterResource(id = R.drawable.gambar)
+        Image(
+            painter = gambar,
+            contentDescription = null,
+            modifier = Modifier
+                .padding(top = 40.dp)
+                .size(170.dp)
+                .clip(CircleShape)
+        )
+        Spacer(modifier = Modifier.height(10.dp))
+        Row(
+            horizontalArrangement = Arrangement.spacedBy(12.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Box(
+                modifier = Modifier
+                    .size(40.dp)
+                    .clip(CircleShape),
+                contentAlignment = Alignment.Center
+            ) {
+                Image(
+                    painter = painterResource(id = R.drawable.facebook),
+                    contentDescription = "Facebook",
+                    modifier = Modifier.size(30.dp)
+                )
+            }
+            Box(
+                modifier = Modifier
+                    .size(40.dp)
+                    .clip(CircleShape),
+                contentAlignment = Alignment.Center
+            ) {
+                Image(
+                    painter = painterResource(id = R.drawable.instagram),
+                    contentDescription = "Google",
+                    modifier = Modifier.size(30.dp)
+                )
+            }
+            Box(
+                modifier = Modifier
+                    .size(40.dp)
+                    .clip(CircleShape),
+                contentAlignment = Alignment.Center
+            ) {
+                Image(
+                    painter = painterResource(id = R.drawable.twiter),
+                    contentDescription = "Twitter",
+                    modifier = Modifier.size(30.dp)
+                )
+            }
+            Box(
+                modifier = Modifier
+                    .size(40.dp)
+                    .clip(CircleShape),
+                contentAlignment = Alignment.Center
+            ) {
+                Image(
+                    painter = painterResource(id = R.drawable.linkedlin),
+                    contentDescription = "LinkedIn",
+                    modifier = Modifier.size(30.dp)
+                )
+            }
+        }
+        Spacer(modifier = Modifier.height(5.dp))
+        Text(
+            text = stringResource(id = R.string.nama),
+            fontSize = 30.sp,
+            fontFamily = FontFamily.SansSerif,
+            fontWeight = FontWeight.Bold,
+            color = Color.White
+        )
+        Text(
+            text = stringResource(id = R.string.instagram),
+            fontSize = 14.sp,
+            color = Color.White
+        )
+        Text(
+            text = "Saya Seorang Front End Developer",
+            fontSize = 16.sp,
+            color = Color.White,
+            modifier = Modifier.padding(top = 5.dp)
+        )
+        Spacer(modifier = Modifier.height(25.dp))
+        Card(
+            modifier = Modifier
+                .fillMaxWidth(0.9f)
+                .padding(horizontal = 12.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = Color.DarkGray
+            ),
+            shape = RoundedCornerShape(20.dp),
+            elevation = CardDefaults.cardElevation(8.dp)
+        ) {
