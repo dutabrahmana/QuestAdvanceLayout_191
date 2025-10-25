@@ -243,4 +243,24 @@ fun Tugas4(modifier: Modifier = Modifier) {
                         color = Color.White
                     )
                 }
-              ]
+                val gambarKanan = painterResource(id = R.drawable.play)
+                Image(
+                    painter = gambarKanan,
+                    contentDescription = null,
+                    modifier = Modifier.size(30.dp)
+                )
+            }
+        }
+    }
+    Box(
+        modifier = Modifier
+            .fillMaxSize()
+    ) {
+        Text(
+            text = stringResource(id = R.string.copy),
+            modifier = Modifier
+                .align(Alignment.BottomCenter)
+                .padding(bottom = 25.dp)
+        )
+    }
+}
