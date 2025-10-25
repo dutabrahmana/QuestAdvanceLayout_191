@@ -20,9 +20,9 @@ class MainActivity : ComponentActivity() {
         setContent {
             Praktikum3Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                   ActivitasPertama(
-                       modifier = Modifier.padding(innerPadding).fillMaxSize()
-                   )
+                    Tugas4(
+                        modifier = Modifier.padding(innerPadding).fillMaxSize()
+                    )
                 }
             }
         }
