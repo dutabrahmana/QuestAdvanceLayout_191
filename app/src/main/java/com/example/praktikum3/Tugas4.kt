@@ -36,7 +36,7 @@ fun Tugas4(modifier: Modifier = Modifier) {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color.Gray)
+            .background(Color.DarkGray)
             .padding(top = 15.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
@@ -117,7 +117,7 @@ fun Tugas4(modifier: Modifier = Modifier) {
             color = Color.White
         )
         Text(
-            text = "Saya Seorang Trader Muda Mendunia"
+            text = "Saya Seorang Trader Muda Mendunia",
             fontSize = 16.sp,
             color = Color.White,
             modifier = Modifier.padding(top = 5.dp)
